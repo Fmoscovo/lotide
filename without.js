@@ -1,12 +1,3 @@
-/*const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};*/ 
-
-
 const eqArrays = function (array1, array2) {
   if (array1.length !== array2.length) {
     return false;
@@ -29,10 +20,22 @@ const eqArrays = function (array1, array2) {
         }
       };
 
-
-/*Test cases
-assertArraysEqual([1, 2, 3], [1, 2, 3]);
-assertArraysEqual([1, 2, 4], [1, 2, 3]);
-assertArraysEqual([1, 2, 3], [1, 2, 3, 4]);
-assertArraysEqual([1, 2, '3'], [1, 2, 3]);
-assertArraysEqual([1, 2]);*/
+      const without = function(source, itemsToRemove) {
+        let result = [];
+      
+        for (let i = 0; i < source.length; i++) {
+          let shouldRemove = false;
+          for (let j = 0; j < itemsToRemove.length; j++) {
+            if (source[i] === itemsToRemove[j]) {
+              shouldRemove = true;
+              break;
+            }
+          }
+          if (!shouldRemove) {
+            result.push(source[i]);
+          }
+        }
+      
+        return result;
+      }
+  
