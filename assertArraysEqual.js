@@ -28,7 +28,7 @@ const eqArrays = function (array1, array2) {
           console.log(`🛑🛑🛑 Assertion Failed: [${array1}] is not equal to [${array2}]`);
         }
       };
-
+1
 
 /*Test cases
 assertArraysEqual([1, 2, 3], [1, 2, 3]);
