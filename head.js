@@ -11,7 +11,7 @@ assertEqual(1, 1);
 
 const head = function(array) {
   if (array.length === 0) {
-    return undefined ;
+    return undefined;
   }
-  return array[0]
+  return array[0];
 };

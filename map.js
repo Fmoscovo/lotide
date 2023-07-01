@@ -1,6 +1,6 @@
 const words = ["ground", "control", "to", "major", "tom"];
 
-const results1 = words.map( word => word[0]);
+const results1 = words.map(word => word[0]);
 
 console.log(results1);
 
@@ -14,19 +14,19 @@ const assertArraysEqual = function(array1, array2) {
   }
 };
 
-const eqArrays = function (array1, array2) {
+const eqArrays = function(array1, array2) {
   if (array1.length !== array2.length) {
     return false;
   }
 
   for (let i = 0; i < array1.length; i++) {
-       if (array1[i] !== array2[i]) {
-         return false;
-       }
-    
+    if (array1[i] !== array2[i]) {
+      return false;
+    }
+
   }
   return true;
-      };
+};
 
 
 
@@ -34,13 +34,13 @@ const eqArrays = function (array1, array2) {
 
 
 //tests
- const words2 = [];
-  const expected = [];
-      
-      const results = words.map(word => word[0]);
-      assertArraysEqual(results, expected);0 // failed
+const words2 = [];
+const expected = [];
 
-      
+const results = words.map(word => word[0]);
+assertArraysEqual(results, expected); 0; // failed
+
+
 const expected2 = ["g", "c", "t", "m", "t"];
 
 const results2 = words.map(word => word[0]);
