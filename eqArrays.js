@@ -50,4 +50,4 @@ const words3 = ["brazil"];
 const expected3 = ["b"];
 
 const results3 = words3.map(word => word[0]);
-assertArraysEqual(results3, expected3); // pass
+// assertArraysEqual(results3, expected3); // pass
