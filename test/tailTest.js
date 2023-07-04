@@ -1,10 +1,9 @@
-const assertEqual = require('./assertEqualTest');
+const assertEqual = require('../assertEqual');
+const head = require('../head');
 const tail = require('../tail');
 
-// Test Case: Check the original array 
-const words = ["Yo Yo", "Lighthouse", "Labs"];
-tail(words); // no need to capture the return value since we are not checking it
-assertEqual(words.length, 3); // original array should still have 3 elements!
-
-const emptyArray = tail([]); // An empty array should yield an empty array for its tail
-assertEqual(emptyArray.length, 0);
+//TESTCODE
+assertEqual(head([5,6,7]), 5);
+assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(tail([5,6,7]), [6,7]);
+assertEqual(tail(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
