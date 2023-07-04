@@ -1,9 +1,7 @@
 const assertEqual = require('../assertEqual');
-const head = require('../head');
-const tail = require('../tail');
+
 const eqArrays = require('../eqArrays');
-const assertObjectsEqual = require('../assertObjectsEqual');
-const eqObjects = require('../eqObjects');
+
 
 // Test Case: Check if two arrays are equal
 const array1 = [1, 2, 3];

@@ -8,5 +8,4 @@ const assertArraysEqual = function(array1, array2) {
     console.log(`🛑🛑🛑 Assertion Failed: [${array1}] is not equal to [${array2}]`);
   }
 };
-
 module.exports = assertArraysEqual;

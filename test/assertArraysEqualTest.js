@@ -1,9 +1,5 @@
 const assertEqual = require('../assertEqual');
-const head = require('../head');
-const tail = require('../tail');
-const eqArrays = require('../eqArrays');
-const assertObjectsEqual = require('../assertObjectsEqual');
-const eqObjects = require('../eqObjects');
+
 const assertArraysEqual = require('../assertArraysEqual');
 
 //Test cases
