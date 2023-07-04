@@ -1,5 +1,5 @@
+const assertEqual = require('../assertEqual');
 const head = require('../head');
 
-head([5,6,7]);
 
-module.exports = head;
+assertEqual(head([5,6,7]), 5);
